@@ -9,13 +9,14 @@ const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
 
 
+
 function getComputerChoice(){
     const choices = ['r', 'p', 's'];
     const randomNumber = Math.floor(Math.random() * 3);
     return choices[randomNumber];
 }
 
-function convertToWord(letter){
+function convertToWord(letter) {
     if (letter === "r") return "Rock";
     if (letter === "p") return "Paper";
     return "Scissors";
@@ -61,19 +62,16 @@ function game(userChoice) {
     }
 }
 
+function addClickEvent(element, choice) {
+    element.addEventListener('click', function () {
+        game(choice);
+    });
+}
 
 function main(){
-    rock_div.addEventListener('click', function(){
-        game("r")
-    })
-    
-    paper_div.addEventListener('click', function(){
-        game("p")
-    })
-    
-    scissors_div.addEventListener('click', function(){
-        game("s")
-    })
+    addClickEvent (rock_div, 'r');
+    addClickEvent (paper_div, 'p');
+    addClickEvent (scissors_div, 's');
 }
 
 main();
