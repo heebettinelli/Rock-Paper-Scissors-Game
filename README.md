@@ -6,13 +6,13 @@ Rock Paper Scissors is a game development with JavaScript.
 - Score
 
 
-<h3>Tecnologias Utilizadas:</h3>
+<h3>technologies Used:</h3>
 
-- Html 5: Linguagem de marcação 
-- Css 3: Folhas de estilização 
-- JavaScript: Linguagem de programação 
-- VS Code: Editor de código
+- Html 5: Markup language
+- Css 3: Styling Sheets 
+- JavaScript: Programming language
+- VS Code: Code editor
 
-<h3>Como Executar:</h3>
+<h3>How to Run:</h3>
 
-Clique <a href="">neste link </a> e você será redirecionado para começar a jogar.
+Click <a href="">this link </a> and you will be redirected to start playing.
