@@ -1,26 +1,180 @@
 @charset "UTF-8";
 
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+:root {
+    /* font */
+    --font: Arial, Helvetica, sans-serif;
+    /* colors */
+    --h1-color: black;
+    --p-color: white;
+    --heaeder-background: white;
+    --body-background: #151515;
+    --badge: #e2584d;
+    --hover: #24272e;
 }
 
-body{
-    background-color: #151515;
+/* media all */
+@media all {
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background-color: var(--body-background);
+    }
+}
+/* media query small screen */
+@media screen and (max-width: 600px){
+    score-board {
+        font-size: 32px;
+        padding: 10px;
+        width: 150px;
+    }
+
+    .result {
+        font-size: 32px;
+    }
+
+    .choices {
+        padding: 5px;
+    }
+
+    .choice {
+        padding: 8px;
+        margin: 0px 5px;
+    }
+
+    #action-message {
+        font-size: 14px;
+    }
 }
 
-header{
-    background-color: white;
+/* media query big screen */
+@media screen and (min-width: 601px){
+    header{
+        background-color: var(--heaeder-background);
+        padding: 20px;
+    }
+    
+    header > h1{
+        color: var(--h1-color);
+        text-align: center;
+        font-weight: bold;
+        font-family: var(--font);
+    }
+    .score-board{
+        margin: 20px auto;
+        border: 3px solid white;
+        border-radius: 4px;
+        text-align: center;
+        width: 200px;
+        color: var(--p-color);
+        font-size: 46px;
+        padding: 15px 20px;
+        font-family: var(--font);
+        position: relative;
+    }
+    
+    .badge{
+        background-color: var(--badge);
+        color: var(--p-color);
+        font-size: 14px;
+        padding: 2px 10px;
+        font-family: var(--font);
+    }
+    
+    #user-label{
+        position: absolute;
+        top: 30px;
+        left: -25px;
+    }
+    
+    #computer-label{
+        position: absolute;
+        top: 30px;
+        right: -35px;
+    }
+    
+    .result{
+        color: var(--p-color);
+        font-size: 40px;
+    }
+    
+    .result > p {
+        text-align: center;
+        font-weight: bold;
+        font-family: var(--font);
+    }
+    
+    .choices {
+        margin-top: 50px 0;
+        text-align: center;
+        padding: 30px;
+    }
+    
+    .choice {
+        border: 3px solid white;
+        border-radius: 4px;
+        display: inline-block;
+        padding: 10px;
+        margin: 0px 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .rock {
+        width: 95px;
+        padding: 5px;
+        margin: 10px;
+    }
+    
+    .paper {
+        width: 85px;
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    .scissors {
+        width: 90px;
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    .choice:hover {
+        cursor: pointer;
+        background: var(--hover);
+    
+    } 
+    
+    #action-message {
+        text-align: center;
+        color: var(--p-color);
+        font-weight: bold;
+        font-family: var(--font);
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    
+    
+
+}
+
+
+
+
+/* past way */
+
+/* header{
+    background-color: var(--heaeder-background);
     padding: 20px;
 }
 
 header > h1{
-    color: black;
+    color: var(--h1-color);
     text-align: center;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font);
 }
 .score-board{
     margin: 20px auto;
@@ -28,19 +182,19 @@ header > h1{
     border-radius: 4px;
     text-align: center;
     width: 200px;
-    color: white;
+    color: var(--p-color);
     font-size: 46px;
     padding: 15px 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font);
     position: relative;
 }
 
 .badge{
-    background-color: #e2584d;
-    color: white;
+    background-color: var(--badge);
+    color: var(--p-color);
     font-size: 14px;
     padding: 2px 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font);
 }
 
 #user-label{
@@ -56,14 +210,14 @@ header > h1{
 }
 
 .result{
-    color: white;
+    color: var(--p-color);
     font-size: 40px;
 }
 
 .result > p {
     text-align: center;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font);
 }
 
 .choices {
@@ -101,16 +255,16 @@ header > h1{
 
 .choice:hover {
     cursor: pointer;
-    background: #24272e;
+    background: var(--hover);
 
 } 
 
 #action-message {
     text-align: center;
-    color: white;
+    color: var(--p-color);
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font);
     font-size: 20px;
     margin-top: 20px;
 }
-
+ */
