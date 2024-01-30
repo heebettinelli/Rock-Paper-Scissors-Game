@@ -15,4 +15,4 @@ Rock Paper Scissors is a game development with JavaScript.
 
 <h3>How to Run:</h3>
 
-Click <a href="">this link </a> and you will be redirected to start playing.
+Click <a href="https://heebettinelli.github.io/Rock-Paper-Scissors-Game/" target="_blank">this link </a> and you will be redirected to start playing.
