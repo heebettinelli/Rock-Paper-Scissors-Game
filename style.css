@@ -118,6 +118,7 @@
         margin: 10px;
     }
     .paper {
+
         width: 85px;
         padding: 5px;
         margin: 5px;
@@ -130,7 +131,6 @@
     .choice:hover {
         cursor: pointer;
         background: var(--hover);
-    
     } 
     #action-message {
         text-align: center;
