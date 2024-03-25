@@ -29,6 +29,7 @@ header > h1 {
     color: var(--h1-color);
     text-align: center;
     font: bold var(--font);
+    font-size: 30px;
 }
 
 .score-board {
@@ -66,6 +67,7 @@ header > h1 {
 .result > p {
     text-align: center;
     font: bold var(--font);
+    color: var(--p-color);
 }
 
 .choice:hover {
